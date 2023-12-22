@@ -1,10 +1,10 @@
-var usuarioQuiereContinuar = true;
+let usuarioQuiereContinuar = true;
 function iniciarCalculadora(){
     while (usuarioQuiereContinuar == true) {
     // Obtener números y operación del usuario
-    var num1 = Number(prompt("Ingresa el primer número:"));
-    var operacionSeleccionada = prompt("Ingrese la operación (+, -, *, /):");
-    var num2 = Number(prompt("Ingresa el segundo número:"));
+    let num1 = Number(prompt("Ingresa el primer número:"));
+    let operacionSeleccionada = prompt("Ingrese la operación (+, -, *, /):");
+    let num2 = Number(prompt("Ingresa el segundo número:"));
 
     let resultado;
 
@@ -12,19 +12,15 @@ function iniciarCalculadora(){
         case "+":
             resultado = (num1 + num2);
             break;
-
         case "-":
             resultado = (num1 - num2);
             break;
-
         case "*":
             resultado = (num1 * num2);
             break;
-
         case "/":
             resultado = (num1 / num2);
             break;
-
         default:
             alert("Operación no válida");
     }
